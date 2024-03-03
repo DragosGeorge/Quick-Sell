@@ -72,7 +72,7 @@ class QuickSell(ui.Window):
 
 	def BoardInterface(self):
 
-		self.Board = ui.MakeBoardWithTitleBar(self, "not_pick", "Sell Object",ui.__mem_func__(self.Close), 170, 100)
+		self.Board = ui.MakeBoardWithTitleBar(self, "not_pick", localeInfo.QUICK_SELL_TITLE_NAME,ui.__mem_func__(self.Close), 170, 100)
 
 		self.sellButton = ui.MakeButton(self, self.QUICK_SELL_WIDTH / 2 - 70, 100 - 32, "", "d:/ymir work/ui/public/", "AcceptButton00.sub", "AcceptButton01.sub", "AcceptButton02.sub")
 		self.sellButton.SetEvent(self.__OnClickSellButton)
@@ -112,7 +112,7 @@ class QuickSell(ui.Window):
 
 		self.sellPrice.SetText("|Ikey/yang|i"+localeInfo.NumberToDecimalStringQuickSell(price))
 		self.sellPrice.SetHorizontalAlignCenter()
-		self.sellItemSelectedCount.SetText("Items selected: %d" % selected_count)
+		self.sellItemSelectedCount.SetText(localeInfo.QUICK_SELL_SELECTED_ITEMS + " %d" % selected_count)
 		self.sellItemSelectedCount.SetHorizontalAlignCenter()
 
 	def __OnClickSellButton(self):
