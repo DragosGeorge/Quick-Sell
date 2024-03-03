@@ -10,4 +10,4 @@ By pressing SHIFT + RIGHT CLICK on the items eligible for sale, an interface wil
 
 ## Demo
 
-![Demo](gif/example.gif)
+![Demo](example.gif)
