@@ -1,0 +1,3 @@
+Add:
+public:
+	void	RefreshInventory();

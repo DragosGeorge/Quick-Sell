@@ -1,0 +1,3 @@
+QUICK_SELL_SELECTED_ITEMS   Items selected:
+QUICK_SELL_TITLE_NAME   Sell
+QUICK_SELL_TOOLTIP	|Ikey/shift|i |cffc36927+ |Ikey/mouse_right|i - |cffc36927Sell item.

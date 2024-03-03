@@ -1,0 +1,4 @@
+Add:
+
+if app.QUICK_SELL_SYSTEM:
+	QUICK_SELL_ITEMS = []
