@@ -42,6 +42,18 @@ Add below:
 		if app.QUICK_SELL_SYSTEM:
 			self.__MakeQuickSell()
 
+Search def Close(self): and add :
+
+		if app.QUICK_SELL_SYSTEM:
+			if self.wndQuickSell:
+				self.wndQuickSell.Hide()
+
+Search def HideAllWindows(self): and add:
+
+		if app.QUICK_SELL_SYSTEM:
+			if self.wndQuickSell:
+				self.wndQuickSell.Hide()
+
 Search:
 
 		del self.wndItemSelect
