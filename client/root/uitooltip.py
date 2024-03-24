@@ -3,7 +3,7 @@ Search self.AddItemData( in def SetInventoryItem
 Add below:
 
 		if app.QUICK_SELL_SYSTEM:
-			self.AppendQuckSellItem()
+			self.AppendQuckSellItem(slotIndex)
 
 Search:
 
@@ -12,7 +12,9 @@ Search:
 Add below:
 
 	if app.QUICK_SELL_SYSTEM:
-		def AppendQuckSellItem(self):
+		def AppendQuckSellItem(self,slotIndex):
+			if player.IsEquipmentSlot(slotIndex):
+				return
 			if item.IsAntiFlag(item.ITEM_ANTIFLAG_SELL):
 				return
 			else:
