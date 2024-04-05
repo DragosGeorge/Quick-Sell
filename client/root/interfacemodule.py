@@ -85,6 +85,11 @@ Add below:
 				self.AdjustQuickSell()
 			self.wndQuickSell.AppendSellSlot(slotIndex)
 
+		def AppendQuickSellSlotSpecialInventory(self, slotIndex):
+			if self.wndSpecialInventory.IsShow() and not self.IsShowQuickSell():
+				self.AdjustQuickSell()
+			self.wndQuickSell.AppendSellSlot(slotIndex)
+		
 		def RemoveQuickSellSlot(self, slotIndex):
 			self.wndQuickSell.RemoveSellSlot(slotIndex)
 
@@ -101,6 +106,10 @@ Add below:
 			self.AppendQuickSellSlot(slotIndex)
 			self.UpdateQuickSellPrice()
 
+		def AppendSellSlotSpecialInventory(self, slotIndex):
+			self.AppendQuickSellSlotSpecialInventory(slotIndex)
+			self.UpdateQuickSellPrice()
+		
 		def RemoveSellSlot(self, slotIndex):
 			self.RemoveQuickSellSlot(slotIndex)
 			self.UpdateQuickSellPrice()
