@@ -20,7 +20,7 @@ Add below:
 					self.RefreshBagSlotWindow()
 					return
 				else:
-					self.interface.AppendSellSlot(slotIndex)
+					self.interface.AppendSellSlotSpecialInventory(slotIndex)
 					self.RefreshBagSlotWindow()
 					return
 
