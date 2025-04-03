@@ -23,3 +23,5 @@ By pressing SHIFT + RIGHT CLICK on the items eligible for sale, an interface wil
 4.A log has been added to the interface, allowing you to see the names of the items you want to sell.
 
 Files such as add-ons and button images have been added to the repository.
+
+https://i.imgur.com/EUSBI0h.gif
