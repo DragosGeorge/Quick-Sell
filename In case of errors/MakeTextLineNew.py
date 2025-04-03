@@ -4,11 +4,22 @@ def MakeTextLine(parent):
 
 Add Bellow:
 
-def MakeTextLineNew(parent, x, y, text):
+def MakeTextLineNew(parent, horizontalAlign=True, verticalAlgin=True, x=0, y=0):
 	textLine = TextLine()
 	textLine.SetParent(parent)
-	textLine.SetPosition(x, y)
-	textLine.SetText(text)
+
+	if horizontalAlign == True:
+		textLine.SetWindowHorizontalAlignCenter()
+
+	if verticalAlgin == True:
+		textLine.SetWindowVerticalAlignCenter()
+
+	textLine.SetHorizontalAlignCenter()
+	textLine.SetVerticalAlignCenter()
+
+	if x != 0 and y != 0:
+		textLine.SetPosition(x, y)
+
 	textLine.Show()
 	return textLine
 
