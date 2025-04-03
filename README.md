@@ -11,3 +11,15 @@ By pressing SHIFT + RIGHT CLICK on the items eligible for sale, an interface wil
 ## Demo
 
 ![Demo](example.gif)
+
+## UPDATE
+
+1.When the sales window appears, items that cannot be sold will be displayed in white.
+
+2.While the window is open, items can no longer be moved to the inventory.
+
+3.The selling prices of the items will appear in the tooltip when the window is open.
+
+4.A log has been added to the interface, allowing you to see the names of the items you want to sell.
+
+Files such as add-ons and button images have been added to the repository.
