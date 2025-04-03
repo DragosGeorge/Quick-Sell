@@ -12,7 +12,7 @@ Add at the end:
 			for k in xrange(player.INVENTORY_PAGE_SIZE * 5):
 				slotNumber = self.__InventoryLocalSlotPosToGlobalSlotPos(k)
 				if slotNumber in constInfo.QUICK_SELL_ITEMS:
-					self.wndItem.SetSlotCoverImage(k, "inventory/selected_icon.tga")
+					self.wndItem.SetSlotCoverImage(k, "d:/ymir work/inventory/selected_icon.tga")
 				else:
 					self.wndItem.EnableSlotCoverImage(k, False)
 
