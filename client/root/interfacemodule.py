@@ -33,10 +33,6 @@ Add below:
 		if app.QUICK_SELL_SYSTEM:
 			self.__MakeQuickSell()
 
-Search:
-
-		self.wndChatLog.Destroy()
-
 Search def Close(self): and add :
 
 		if app.QUICK_SELL_SYSTEM:
