@@ -5,4 +5,4 @@ self.isShopItem = False
 
 Add bellow:
 
-self.interface = False
+self.interface = None
