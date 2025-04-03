@@ -22,7 +22,9 @@ Search:
 
 		def MarkUnusableInvenSlotOnTopWnd(self
 
+Bellow:
+				elif onTopWnd == player.ON_TOP_WND_EXCHANGE and self.dlgExchange and self.dlgExchange.CantTradableItem(InvenSlot):
+					return True
 Add:
-
 				elif onTopWnd == player.ON_TOP_WND_QUICK_SELL and self.wndQuickSell and self.wndQuickSell.CantSellItem(InvenSlot):
 					return True
