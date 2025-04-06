@@ -23,7 +23,7 @@ Add this function:
                 slotNumber = item.BELT_INVENTORY_SLOT_START + k
                 itemVnum = player.GetItemIndex(slotNumber)
                 if slotNumber in constInfo.QUICK_SELL_ITEMS:
-                    self.wndBeltInventorySlot.SetSlotCoverImage(slotNumber, "inventory/selected_icon.tga")
+                    self.wndBeltInventorySlot.SetSlotCoverImage(slotNumber, "d:/ymir work/inventory/selected_icon.tga")
                 else:
                    self.wndBeltInventorySlot.EnableSlotCoverImage(slotNumber, False)
 
