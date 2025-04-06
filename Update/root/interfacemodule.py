@@ -20,6 +20,17 @@ Add:
 
 Search:
 
+		if app.QUICK_SELL_SYSTEM:
+			if self.wndQuickSell:
+				self.wndQuickSell.Hide()
+Change:
+
+		if app.QUICK_SELL_SYSTEM:
+			if self.wndQuickSell:
+				self.wndQuickSell.Destroy()
+
+Search:
+
 		def MarkUnusableInvenSlotOnTopWnd(self
 
 Bellow:
