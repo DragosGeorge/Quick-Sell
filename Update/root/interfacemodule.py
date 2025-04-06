@@ -18,7 +18,7 @@ Add:
 			self.wndQuickSell = uiQuickSell.QuickSell()
 			self.wndQuickSell.BindInterface(self)
 
-Search:
+Search in def Close(self):
 
 		if app.QUICK_SELL_SYSTEM:
 			if self.wndQuickSell:
